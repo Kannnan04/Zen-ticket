@@ -1,0 +1,118 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .container-fluid {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .header h1 {
+    margin: 0;
+  
+  }
+  b{
+    font-size: larger;
+    padding-right: 10px;
+  }
+  
+  .user-info {
+    text-align: right;
+  }
+  
+  .main-content {
+    display: flex;
+    margin-top: 20px;
+    width: 60%;
+    margin-left: 350px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .task-submission {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .task-title {
+    margin: 0 0 10px 0;
+    font-size: 19px;
+    color: #333;
+  }
+  
+  .task-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .submission-date {
+    font-size: 17px;
+    color: #666;
+  }
+  
+  .task-count {
+    background-color: #ff8c00;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9em;
+  }
+  .button-container {
+    display: flex;
+    gap: 10px;
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #4b2f60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #6a5acd;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .user-info {
+      text-align: left;
+    }
+
+    .task-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-count {
+      margin-top: 10px;
+    }
+    .main-content{
+      margin-left: -30px;
+      width: auto;
+    }
+  }
